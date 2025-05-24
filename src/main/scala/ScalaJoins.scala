@@ -58,7 +58,7 @@ object ScalaJoins {
     // Left Anti Join (Only rows from df1 that *do not* have a match in df2)
     println("Left Anti Join:")
     df1.join(df2, Seq("id"), "left_anti").show()
-
-    //spark.stop()
+    Thread.sleep(120000)
+    spark.stop()
   }
 }
